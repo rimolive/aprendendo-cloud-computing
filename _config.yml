@@ -10,7 +10,7 @@ url: https://rimolive.github.io/aprendendo-cloud-computing
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: /jekyll-clean
+baseurl: /aprendendo-cloud-computing
 
 # This can be '' to hide the Github nav button
 github: 'rimolive/jekyll-clean'
