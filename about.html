@@ -3,6 +3,19 @@ layout: default
 ---
 
 <div class="well">
-    <h1>About me</h1>
-    <p>Hello, I am me.</p>
+    <h1>Sobre mim</h1>
+    <!-- Output author details if some exist. -->
+    {% if author %}
+        <span>
+            <!-- Mugshot. -->
+            <img src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
+
+            <!-- Personal Info. -->
+            Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+        </span>
+    {% endif %}
+    <span>
+        <img src="http://en.gravatar.com/userimage/105418088/8adef250ff7cdfbf0a90b841b7def16e.jpg?size=200" />
+    </span>
+    <p>Ricardo é Senior Software Engineer da Red Hat, trabalhando junto ao time de JBoss e OpenShift para integração dos projetos JBoss ao OpenShift. Trabalhou como Principal Technical Support Engineer na mesma empresa, disponibilizando suporte especializado em ambientes de produção e auxiliando desenvolvedores na utilização dos produtos JBoss para a América Latina. É graduado em Ciência da Computação pela Universidade São Judas Tadeu e Pós-graduado em Desenvolvimento de Soluções Corporativas em Java pela FIAP. Possui mais de 10 anos de experiência em TI, sendo 5 anos como desenvolvedor Java atuando em empresas como Ericsson e IBM.</p>
 </div>
