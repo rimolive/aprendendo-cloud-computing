@@ -6,6 +6,6 @@ comments: false
 ---
 Olá,
 
-O blog "Aprendendo Cloud Computing" está de cara nova e agora com um visual melhorado. Estou ainda fazendo uns ajustes porém irei trazer ainda mais conteúdo.
+O blog "Aprendendo Cloud Computing" está de cara nova e agora com um visual diferente. Estou ainda fazendo uns ajustes porém irei trazer ainda mais conteúdo.
 
 Aguardem cenas dos próximos capítulos (ou posts)!
