@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "O novo OpenShift Online"
+date: 2016-06-20 10:35:00 -0300
 comments: true
 ---
 O time do OpenShift lanço o programa Developer Preview do novo OpenShift Online. Ele é baseado no OpenShift v3, que possui as seguintes funcionalidades:
