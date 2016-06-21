@@ -10,8 +10,8 @@ em altíssima carga. Isso não é diferente quando estamos falando de desenvolvi
 serviço que resolve esses problemas oferecendo um serviço de testes de carga e stress de altíssimo volume de nome
 Blazemeter. Tentarei explicar a idéia deles a seguir.
 
-{% include image.html
-        img="{{ site.url }}/images/blazemeter/blazemeter-main-console.png"
+{% include image-local.html
+        img="images/blazemeter/blazemeter-main-console.png"
         title="Console do Blazemeter"
         caption="Console do Blazemeter" %}
 
@@ -21,14 +21,14 @@ O [Blazemeter][blazemeter-page] é um serviço que oferece um servidor jMeter (m
 em uma ambiente complexa de modo a criar testes de carga e stress com muitos usuários simultâneos e disponibiliza um
 dashboard com os dados do teste. Através do Blazemeter, é possível criar os seguintes testes:
 
-* Testes simples de acesso/disponibilidade com URL Test
+* Testes simples de acesso/disponibilidade com url Test
 * Testes complexos de carga utilizando JMeter
 * Testes funcionais utilizando WebDriver (um plugin do JMeter)
 * Testes automatizados com Taurus
 * Uma combinação dos testes acima
 
-{% include image.html
-        img="{{ site.url }}/images/blazemeter/blazemeter-create-test.png"
+{% include image-local.html
+        img="images/blazemeter/blazemeter-create-test.png"
         title="Criando um novo teste no Blazemeter"
         caption="Criando um novo teste no Blazemeter" %}
 
@@ -38,32 +38,32 @@ contendo diversas informações, como tempo médio de resposta da aplicação, t
 
 Criando um teste simples de acesso
 ----------------------------------
-Irei mostrar como criar um teste simples de URL usando o blazemeter. Abaixo a figura dos parametros utilizados:
+Irei mostrar como criar um teste simples de url usando o blazemeter. Abaixo a figura dos parametros utilizados:
 
-{% include image.html
-        img="{{ site.url }}/images/blazemeter/blazemeter-create-test.png"
-        title="Criando um teste simples de URL"
-        caption="Criando um teste simples de URL" %}
+{% include image-local.html
+        img="images/blazemeter/blazemeter-create-test.png"
+        title="Criando um teste simples de url" 
+        caption="Criando um teste simples de url"  %}
 
 Ao salvar os parametros e clicar em play, o blazemeter já pergunta se quer criar o ambiente de testes e informa o que será
 feito.
 
-{% include image.html
-        img="{{ site.url }}/images/blazemeter/blazemeter-start-test.png"
+{% include image-local.html
+        img="images/blazemeter/blazemeter-start-test.png"
         title="Informação sobre o teste antes de executar"
         caption="Informação sobre o teste antes de executar" %}
 
 Ao clicar em Launch Servers, o Blazemeter tratar de fazer build desse ambiente e dar inicio aos testes.
 
-{% include image.html
-        img="{{ site.url }}/images/blazemeter/blazemeter-starting-test.png"
+{% include image-local.html
+        img="images/blazemeter/blazemeter-starting-test.png"
         title="Preparando o ambiente de testes"
         caption="Preparando o ambiente de testes" %}
 
 Após a finalização do build do ambiente, o Blazemeter dá início aos testes e já gera o relatório em tempo real.
 
-{% include image.html
-        img="{{ site.url }}/images/blazemeter/blazemeter-starting-results.png"
+{% include image-local.html
+        img="images/blazemeter/blazemeter-starting-results.png"
         title="Relatório de testes"
         caption="Relatório de testes" %}
 
@@ -72,7 +72,7 @@ pelo serviço, mas é possível criar testes mais complexos e que simulam intera
 
 Mas e se eu quiser fazer um teste simples de carga?
 -------------------------------------------------
-A Apache oferece uma ferramenta bem simples chamada [Apache Benchmark][ab-page], que permite fazer testes rápidos de carga em URLs. A sintaxe do comando
+A Apache oferece uma ferramenta bem simples chamada [Apache Benchmark][ab-page], que permite fazer testes rápidos de carga em url . A sintaxe do comando
 é bem simples:
 
 ```bash
