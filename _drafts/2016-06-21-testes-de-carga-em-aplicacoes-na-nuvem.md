@@ -1,21 +1,25 @@
 ---
 layout: post
 title: "Testes de carga em aplicações na Nuvem com Blazemeter"
-#date: 2014-11-16T15:49:00.000-02:00
-author: Ricardo Martinelli Oliveira
-tags: 
+date: 2016-06-21 19:00:00 -03:00
+comments: true
 ---
-Uma das maiores preocupações de empresas e startups sobre desenvolvimento de apps hoje em dia é se a sua aplicação vai conseguir aguentar o número de usuários simultâneos ou se as aplicações irão se comportar da forma adequada quando em altíssima carga. Isso não é diferente quando estamos falando de desenvolvimento de aplicações na nuvem.
-Existe um serviço que resolve esses problemas oferecendo um serviço de testes de carga e stress de altíssimo volume de nome Blazemeter. Tentarei explicar a idéia deles a seguir.
+Uma das maiores preocupações de empresas e startups sobre desenvolvimento de apps hoje em dia é se a sua aplicação
+vai conseguir aguentar o número de usuários simultâneos ou se as aplicações irão se comportar da forma adequada quando
+em altíssima carga. Isso não é diferente quando estamos falando de desenvolvimento de aplicações na nuvem. Existe um
+serviço que resolve esses problemas oferecendo um serviço de testes de carga e stress de altíssimo volume de nome
+Blazemeter. Tentarei explicar a idéia deles a seguir.
 
 {% include image.html
-        img="/images/blazemeter/blazemeter-main-console.png"
+        img="{{ site.url }}/images/blazemeter/blazemeter-main-console.png"
         title="Console do Blazemeter"
         caption="Console do Blazemeter" %}
 
 O serviço Blazemeter
 --------------------
-O [Blazemeter][blazemeter-page] é um serviço que oferece um servidor jMeter (mais informações em [http://www.apache.org/jmeter][jmeter-page]) em uma ambiente complexa de modo a criar testes de carga e stress com muitos usuários simultâneos e disponibiliza um dashboard com os dados do teste. Através do Blazemeter, é possível criar os seguintes testes:
+O [Blazemeter][blazemeter-page] é um serviço que oferece um servidor jMeter (mais informações em [http://www.apache.org/jmeter][jmeter-page])
+em uma ambiente complexa de modo a criar testes de carga e stress com muitos usuários simultâneos e disponibiliza um
+dashboard com os dados do teste. Através do Blazemeter, é possível criar os seguintes testes:
 
 * Testes simples de acesso/disponibilidade com URL Test
 * Testes complexos de carga utilizando JMeter
@@ -24,7 +28,7 @@ O [Blazemeter][blazemeter-page] é um serviço que oferece um servidor jMeter (m
 * Uma combinação dos testes acima
 
 {% include image.html
-        img="/images/blazemeter/blazemeter-create-test.png"
+        img="{{ site.url }}/images/blazemeter/blazemeter-create-test.png"
         title="Criando um novo teste no Blazemeter"
         caption="Criando um novo teste no Blazemeter" %}
 
@@ -37,7 +41,7 @@ Criando um teste simples de acesso
 Irei mostrar como criar um teste simples de URL usando o blazemeter. Abaixo a figura dos parametros utilizados:
 
 {% include image.html
-        img="/images/blazemeter/blazemeter-create-test.png"
+        img="{{ site.url }}/images/blazemeter/blazemeter-create-test.png"
         title="Criando um teste simples de URL"
         caption="Criando um teste simples de URL" %}
 
@@ -45,21 +49,21 @@ Ao salvar os parametros e clicar em play, o blazemeter já pergunta se quer cria
 feito.
 
 {% include image.html
-        img="/images/blazemeter/blazemeter-start-test.png"
+        img="{{ site.url }}/images/blazemeter/blazemeter-start-test.png"
         title="Informação sobre o teste antes de executar"
         caption="Informação sobre o teste antes de executar" %}
 
 Ao clicar em Launch Servers, o Blazemeter tratar de fazer build desse ambiente e dar inicio aos testes.
 
 {% include image.html
-        img="/images/blazemeter/blazemeter-starting-test.png"
+        img="{{ site.url }}/images/blazemeter/blazemeter-starting-test.png"
         title="Preparando o ambiente de testes"
         caption="Preparando o ambiente de testes" %}
 
 Após a finalização do build do ambiente, o Blazemeter dá início aos testes e já gera o relatório em tempo real.
 
 {% include image.html
-        img="/images/blazemeter/blazemeter-starting-results.png"
+        img="{{ site.url }}/images/blazemeter/blazemeter-starting-results.png"
         title="Relatório de testes"
         caption="Relatório de testes" %}
 
@@ -71,9 +75,9 @@ Mas e se eu quiser fazer um teste simples de carga?
 A Apache oferece uma ferramenta bem simples chamada [Apache Benchmark][ab-page], que permite fazer testes rápidos de carga em URLs. A sintaxe do comando
 é bem simples:
 
-´´´bash
+```bash
 $ ab -n 10000 -c 100 http://rimolive.github.com/aprendendo-cloud-computing
-´´´
+```
 
 Onde:
 
