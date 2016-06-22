@@ -41,7 +41,7 @@ Criando um teste simples de acesso
 Irei mostrar como criar um teste simples de url usando o blazemeter. Abaixo a figura dos parametros utilizados:
 
 {% include image-local.html
-        img="images/blazemeter/blazemeter-create-test.png"
+        img="images/blazemeter/blazemeter-url-test.png"
         title="Criando um teste simples de url" 
         caption="Criando um teste simples de url"  %}
 
@@ -63,7 +63,7 @@ Ao clicar em Launch Servers, o Blazemeter tratar de fazer build desse ambiente e
 Após a finalização do build do ambiente, o Blazemeter dá início aos testes e já gera o relatório em tempo real.
 
 {% include image-local.html
-        img="images/blazemeter/blazemeter-starting-results.png"
+        img="images/blazemeter/blazemeter-test-result.png"
         title="Relatório de testes"
         caption="Relatório de testes" %}
 
@@ -72,7 +72,7 @@ pelo serviço, mas é possível criar testes mais complexos e que simulam intera
 
 Mas e se eu quiser fazer um teste simples de carga?
 -------------------------------------------------
-A Apache oferece uma ferramenta bem simples chamada [Apache Benchmark][ab-page], que permite fazer testes rápidos de carga em url . A sintaxe do comando
+O projeto Apache oferece uma ferramenta bem simples chamada [Apache Benchmark][ab-page], que permite fazer testes rápidos de carga em url . A sintaxe do comando
 é bem simples:
 
 ```bash
