@@ -57,7 +57,7 @@ Fedora Cloud e OpenShift Origin
 Logo depois do Coffee Break (valeu Athos!), me juntei ao [Daniel Bruno][perfil-daniel]
 para falar sobre Fedora Cloud e OpenShift Origin. Esse assunto é o que sempre me traz
 muitas surpresas pois o pessoal sempre tem algo a acrescentar, e não foi diferente quando
-o Daniel Bruno contou sobre a 
+o Daniel Bruno contou sobre os esforços do SIG de Cloud e o Fedora Cloud.
 
 {% include image.html
         img="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xtf1/v/t1.0-9/13592224_10209979673669828_8302657489460041881_n.jpg?oh=4612d939bf59baeee1eb16a71ff2e211&oe=5831FD79&__gda__=1476005469_8d9e08766dfd2882c07e24d7ca6d5ce9"
