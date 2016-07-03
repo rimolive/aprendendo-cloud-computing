@@ -33,7 +33,8 @@ Athos por sua vez explicou como contribuir para o Fedora e mostrou dicas muito
 úteis para utilização do Fedora, bem como extender o uso com dicas para empacotamento
 e distribuição de softwares para quem quer criar softwares para o Fedora.
 A dupla, apesar de aparentarem muito jovens, esbanjaram conhecimento com experiências
-que eles trazem em seus grupos de estudos e pesquisas.
+que eles trazem em seus grupos de estudos e pesquisas. A apresentação deles foi
+adicionada no meu [perfil do Slideshare][slides-daniela] gentilmente cedida por eles.
 
 Flatpak: Um novo paradigma de distribuição de aplicações
 ========================================================
@@ -110,3 +111,4 @@ P.S.: No momento só tenho os slides do Marcos, mas assim que o pessoal mandar e
 [site-flatpak]: http://flatpak.org/
 [perfil-daniel]: https://www.facebook.com/danielbrunos
 [perfil-davi]: https://www.facebook.com/profile.php?id=100011660734085&fref=ts
+[slides-daniela]: http://www.slideshare.net/rimolive/fedora-24-release-party
