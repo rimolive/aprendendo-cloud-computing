@@ -28,6 +28,12 @@ No site você pode encontrar:
 * Livros em parceria com a O'Reilly sobre novas tecnologias
 * Fóruns e um StackOverflow dedicado como um canal direto aos desenvolvedores das ferramentas
 
+
+{% include image-local.html
+        img="images/tdc2016-sp/equipe-redhat-developers.jpg"
+        title="Equipe do Red Hat Developers"
+        caption="Equipe do Red Hat Developers" %}
+
 Carreira Open Source
 --------------------
 Uma das palestras que apresentei foi na trilha Education e trata de como é possível construir uma carreira sendo adepto a
@@ -40,9 +46,9 @@ isso tive a idéia de apresentar algo sobre dados de como empresas (e também un
 também já contribuem para eles, e com isso as empresas procuram por profissionais que já estão envolvidos com Open Source. 
 
 {% include image-local.html
-        img="images/carreira-open-source.jpg"
-        title="Eu palestrando sobre carreira open Source"
-        caption="Eu palestrando sobre carreira open Source" %}
+        img="images/tdc2016-sp/carreira-open-source.jpg"
+        title="Minha palestra sobre o Thermostat"
+        caption="Minha palestra sobre o Thermostat" %}
 
 
 Thermostat: Uma ferramenta de monitoramento para JVM
@@ -52,6 +58,11 @@ servidores. A palestra foi um tanto curta(eu só tinha 25 minutos) e por isso tu
 algumas VMs rodando no meu laptop e monitorando através da interface gráfica e do shell. O script está disponível no meu
 [GitHub][thermostat-repo] caso alguém queira replicar e conhecer melhor. Estou também melhorando os scripts para fazer
 isso ficar mais fácil de rodar, mas infelizmente terá que ter uma máquina boa.
+
+{% include image-local.html
+        img="images/tdc2016-sp/thermostat.jpg"
+        title="Minha palestra sobre o Thermostat"
+        caption="Minha palestra sobre o Thermostat" %}
 
 Sobre o evento
 --------------
