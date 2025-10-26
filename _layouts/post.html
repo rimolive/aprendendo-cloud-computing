@@ -1,47 +1,41 @@
-{% include header.html %}
+---
+layout: default
+---
 
-<div class="container container-left">
-    <div class="row">
-        <div class="col-md-3 hidden-xs">
-            {% include sidebar.html %}
+<main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    {% include page-image.html %}
+    <div class="page-wrapper">
+      <header class="page-header">
+        {% assign title = page.title | markdownify | strip_html %}
+        {% if page.link %}
+          <h1 id="page-title" class="page-title p-name"><a href="{{ page.link }}">{{ title }} <span class="link-arrow">&rarr;</span></a></h1>
+        {% else %}
+          <h1 id="page-title" class="page-title p-name">{{ title }}</h1>
+        {% endif %}
+      </header>
+
+      <div class="page-sidebar">
+        {% include page-author.html %}
+        {% include page-categories.html %}
+        {% include page-tags.html %}
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          {{ content }}
         </div>
-        <div class="col-md-9">
-          <div class="article">
-            <div class="well">
-                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%-d %b, %Y" }} - {{ page.title }}</a></h1>
-            {% if site.comments and page.comments %}
-                {% if site.disqus != '' %}
-                <p class="author"><a href="#disqus_thread" data-disqus-identifier="{{ page.url | slugify }}">Comments</a></p>
-                {% elsif site.isso != '' %}
-                <p class="author"><a href="{{ site.baseurl }}{{ page.url }}{{ site.isso_suffix }}#isso-thread">Comments</a></p>
-                {% endif %}
-            {% endif %}
-            <div class="post-content">
-            {{ content }}
-            </div>
-            {% if page.comments %}
-                {% if site.disqus != '' %}
-            <div id="disqus_thread">
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </div>
-                {% elsif site.isso != '' %}
-                <section id="isso-thread"></section>
-                {% endif %}
-            {% endif %}
-            </div>
-          </div>
-          <div class="pagination">
-              {% if page.next %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Próximo post</a>
-              {% endif %}
-              {% if page.previous %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Post anterior</a>
-              {% endif %}
-          </div>
-        </div>
+
+        {% if page.share %}
+          {% include social-share.html %}
+        {% endif %}
+
+        {% if site.disqus.shortname %}
+          {% include disqus-comments.html %}
+        {% endif %}
+
+        {% include page-pagination.html %}
+      </div>
     </div>
-</div>
-
-{% include disqus-comments.html %}
-{% include footer.html %}
+  </article>
+</main>
